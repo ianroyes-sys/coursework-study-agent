@@ -1,0 +1,31 @@
+{
+  "name": "coursework-study-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Brightspace (D2L) coursework as a ranked priority queue, plus a policy-gated study-prep agent that never submits work.",
+  "engines": { "node": ">=22.18" },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "seed": "node scripts/seed-sample.mjs",
+    "prep": "node scripts/coursework-prep.mjs",
+    "expire": "node scripts/expire-coursework.mjs",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "next": "^15.3.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.5",
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "tailwindcss": "^4.1.5",
+    "typescript": "^5.8.3"
+  }
+}

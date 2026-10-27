@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+/* Theme tokens the coursework components use (ported from the Omega dashboard). */
+@theme {
+  --color-void: #050308;
+  --color-panel: #0c0812;
+  --color-line: rgba(177, 140, 255, 0.14);
+  --color-hairline: rgba(255, 255, 255, 0.06);
+  --color-ember: #ff8a3d;
+  --color-gold: #ffc861;
+  --color-coral: #ff5e5b;
+  --color-ice: #9ad8ff;
+  --color-fog: #a29aaa;
+  --color-mist: #c9c3d4;
+  --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+html,
+body {
+  background: #050308;
+  color: #e8e4f0;
+  min-height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(ellipse 70% 55% at 50% 38%, rgba(109, 90, 158, 0.13), transparent 70%),
+    #050308;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection { background: rgba(177, 140, 255, 0.32); }
+
+.seclabel {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.17em;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: #a29aaa;
+}
+
+.card {
+  background: linear-gradient(145deg, #17121f, #0c0912 72%);
+  border: 1px solid rgba(201, 185, 222, 0.12);
+  border-radius: 1.25rem;
+  box-shadow: inset 0 1px 0 #f3e5ff05, 0 8px 28px #03010622;
+  transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-hover:hover {
+  border-color: rgba(177, 140, 255, 0.28);
+  transform: translateY(-2px);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-up { animation: fadeUp 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+.fade-up-1 { animation-delay: 0.05s; }
+.fade-up-2 { animation-delay: 0.12s; }
+.fade-up-3 { animation-delay: 0.19s; }
+.fade-up-4 { animation-delay: 0.26s; }
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
+.blink { animation: blink 1.6s ease-in-out infinite; }
+
+.skip-link { position: fixed; top: 8px; left: 16px; z-index: 100; transform: translateY(-160%); padding: 12px 18px; border-radius: 10px; background: #9ad8ff; color: #06121d; }
+.skip-link:focus { transform: translateY(0); }
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-up, .blink { animation: none; opacity: 1; transform: none; }
+}

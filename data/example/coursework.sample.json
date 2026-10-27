@@ -1,0 +1,80 @@
+{
+  "_note": "FAKE sample data for demos and tests. Courses, people and items are invented. Dates are shifted relative to `anchor` when you run `npm run seed`.",
+  "anchor": "2026-09-14",
+  "generatedAt": "2026-09-14T08:00:00.000Z",
+  "term": "Sample Term",
+  "termStart": "2026-08-24",
+  "termEnd": "2026-12-11",
+  "courses": [
+    {
+      "short": "BIO110",
+      "code": "BIO 110-01",
+      "title": "Introduction to Cell Biology",
+      "d2lId": 100001,
+      "meets": "MWF 9:00-9:50",
+      "color": "#9ad8ff",
+      "instructor": "Dr. Sample Instructor",
+      "url": "https://example.desire2learn.com/d2l/home/100001",
+      "gradeWeights": [
+        { "name": "Lab reports", "weightPct": 25, "max": null },
+        { "name": "Quizzes", "weightPct": 15, "max": null },
+        { "name": "Midterm", "weightPct": 25, "max": null },
+        { "name": "Final exam", "weightPct": 35, "max": null }
+      ],
+      "syllabusNote": "Lab reports are due Fridays. Quizzes are timed, one attempt."
+    },
+    {
+      "short": "HIS201",
+      "code": "HIS 201-02",
+      "title": "Modern World History",
+      "d2lId": 100002,
+      "meets": "TR 11:00-12:15",
+      "color": "#c4b5fd",
+      "instructor": null,
+      "url": "https://example.desire2learn.com/d2l/home/100002",
+      "gradeWeights": [
+        { "name": "Discussion posts", "weightPct": 20, "max": null },
+        { "name": "Essays", "weightPct": 40, "max": null },
+        { "name": "Final project", "weightPct": 40, "max": null }
+      ],
+      "syllabusNote": "The essay prompts say AI-generated writing is not permitted."
+    },
+    {
+      "short": "STA210",
+      "code": "STA 210-N1",
+      "title": "Applied Statistics",
+      "d2lId": 100003,
+      "meets": "Online",
+      "color": "#ffc861",
+      "instructor": null,
+      "url": "https://example.desire2learn.com/d2l/home/100003",
+      "gradeWeights": [],
+      "syllabusNote": "Homework lives in an external publisher platform; D2L only shows gradebook rows."
+    }
+  ],
+  "items": [
+    { "id": "bio110-a5001", "course": "BIO110", "type": "assignment", "title": "Lab 3 report: osmosis in potato cores", "due": "2026-09-18T23:59:00.000Z", "dueSource": "d2l-duedate", "opens": "2026-09-11T00:00:00.000Z", "points": 50, "weightPct": null, "url": "https://example.desire2learn.com/d2l/home/100001/dropbox", "confidence": "high", "note": "Live Brightspace due date." },
+    { "id": "bio110-q6001", "course": "BIO110", "type": "quiz", "title": "Quiz 2: membranes and transport", "due": "2026-09-16T23:59:00.000Z", "dueSource": "d2l-availability-end", "opens": "2026-09-14T00:00:00.000Z", "points": 20, "weightPct": null, "url": "https://example.desire2learn.com/d2l/home/100001/quizzes", "confidence": "high", "note": "Live Brightspace availability close date." },
+    { "id": "bio110-a5002", "course": "BIO110", "type": "assignment", "title": "Chapter 4 practice review set", "due": "2026-09-21T23:59:00.000Z", "dueSource": "d2l-duedate", "opens": null, "points": null, "weightPct": null, "url": "https://example.desire2learn.com/d2l/home/100001/dropbox", "confidence": "high", "note": "Live Brightspace due date." },
+    { "id": "bio110-s1", "course": "BIO110", "type": "exam", "title": "Midterm exam", "due": "2026-10-07T14:00:00.000Z", "dueSource": "syllabus", "opens": null, "points": null, "weightPct": 25, "url": "https://example.desire2learn.com/d2l/home/100001", "confidence": "medium", "note": "Date from the syllabus schedule; not yet posted in D2L." },
+    { "id": "bio110-s2", "course": "BIO110", "type": "exam", "title": "Final exam", "due": "2026-12-09T14:00:00.000Z", "dueSource": "syllabus", "opens": null, "points": null, "weightPct": 35, "url": "https://example.desire2learn.com/d2l/home/100001", "confidence": "medium", "note": "Date from the syllabus schedule." },
+    { "id": "his201-d7001", "course": "HIS201", "type": "discussion", "title": "Week 4 discussion: the 1848 revolutions", "due": "2026-09-15T23:59:00.000Z", "dueSource": "d2l-topic-end", "opens": "2026-09-08T00:00:00.000Z", "points": 10, "weightPct": null, "url": "https://example.desire2learn.com/d2l/home/100002/discussions/List", "confidence": "high", "note": "Live Brightspace discussion/topic close date." },
+    { "id": "his201-a5101", "course": "HIS201", "type": "assignment", "title": "Essay 1: causes of the First World War", "due": "2026-09-25T23:59:00.000Z", "dueSource": "d2l-duedate", "opens": null, "points": 100, "weightPct": null, "url": "https://example.desire2learn.com/d2l/home/100002/dropbox", "confidence": "high", "note": "Live Brightspace due date." },
+    { "id": "his201-a5102", "course": "HIS201", "type": "project", "title": "Final project proposal", "due": "2026-10-09T23:59:00.000Z", "dueSource": "d2l-duedate", "opens": null, "points": 40, "weightPct": null, "url": "https://example.desire2learn.com/d2l/home/100002/dropbox", "confidence": "high", "note": "Live Brightspace due date." },
+    { "id": "his201-s1", "course": "HIS201", "type": "reading", "title": "Read chapters 5-6 before Thursday", "due": "2026-09-17T15:00:00.000Z", "dueSource": "inferred", "opens": null, "points": null, "weightPct": null, "url": "https://example.desire2learn.com/d2l/home/100002", "confidence": "low", "note": "Inferred from the weekly reading list; verify before trusting it." },
+    { "id": "sta210-g9001", "course": "STA210", "type": "assignment", "title": "Homework 3 (publisher platform)", "due": null, "dueSource": null, "opens": null, "points": 30, "weightPct": null, "url": "https://example.desire2learn.com/d2l/home/100003/grades", "confidence": "low", "note": "Brightspace gradebook item without a current dated assignment object. Confirm its due date in the linked external platform." },
+    { "id": "sta210-q6101", "course": "STA210", "type": "quiz", "title": "Self-assessment: descriptive statistics", "due": "2026-09-20T23:59:00.000Z", "dueSource": "d2l-duedate", "opens": null, "points": null, "weightPct": null, "url": "https://example.desire2learn.com/d2l/home/100003/quizzes", "confidence": "high", "note": "Live Brightspace due date." },
+    { "id": "sta210-a5201", "course": "STA210", "type": "assignment", "title": "Data project milestone 1", "due": null, "dueSource": null, "opens": null, "points": null, "weightPct": null, "url": "https://example.desire2learn.com/d2l/home/100003/dropbox", "confidence": "low", "note": "Brightspace contains an out-of-term date (2025-09-30); it was rejected rather than shown as a current-term deadline." }
+  ],
+  "sources": {
+    "bio110-a5001": { "capturedAt": "2026-09-14T08:00:00.000Z", "instructions": "Write a lab report for the potato-core osmosis experiment. Include a hypothesis, methods, a results table of mass change by sucrose concentration, and a discussion of water potential.", "description": "", "attachments": ["lab3-handout.pdf", "lab3-data-template.xlsx"], "gradeItemId": "8001", "possiblePoints": 50, "autoExportToGrades": true, "attemptsAllowed": null, "timeLimitMinutes": null },
+    "bio110-q6001": { "capturedAt": "2026-09-14T08:00:00.000Z", "instructions": "Covers chapter 3. You have 20 minutes and one attempt.", "description": "", "attachments": [], "gradeItemId": "8002", "possiblePoints": 20, "autoExportToGrades": true, "attemptsAllowed": 1, "timeLimitMinutes": 20 },
+    "bio110-a5002": { "capturedAt": "2026-09-14T08:00:00.000Z", "instructions": "Optional practice review set for chapter 4. Not graded; answers are discussed in recitation.", "description": "", "attachments": ["ch4-practice.pdf"], "gradeItemId": null, "possiblePoints": null, "autoExportToGrades": false, "attemptsAllowed": "unlimited", "timeLimitMinutes": null },
+    "his201-a5101": { "capturedAt": "2026-09-14T08:00:00.000Z", "instructions": "1,200-1,500 words using at least three primary sources from the course reader. Students must do their own work; AI-generated text is not permitted for this essay.", "description": "", "attachments": ["essay1-rubric.pdf"], "gradeItemId": "8101", "possiblePoints": 100, "autoExportToGrades": true, "attemptsAllowed": null, "timeLimitMinutes": null },
+    "sta210-q6101": { "capturedAt": "2026-09-14T08:00:00.000Z", "instructions": "Ungraded self-assessment. Retake as often as you like.", "description": "", "attachments": [], "gradeItemId": null, "possiblePoints": null, "autoExportToGrades": false, "attemptsAllowed": "unlimited", "timeLimitMinutes": null }
+  },
+  "gaps": [
+    "STA 210-N1 homework lives in an external publisher platform; D2L exposes grade rows but not the deadlines.",
+    "BIO 110-01 midterm and final dates come from the syllabus and are not yet posted in D2L."
+  ]
+}
